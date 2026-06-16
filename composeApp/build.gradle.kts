@@ -38,12 +38,12 @@ kotlin {
 
 android {
     namespace = "com.example.miuixsample"
-    compileSdk = 34
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.example.miuixsample"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0.0"
     }
