@@ -43,7 +43,7 @@ fun MainScreen(
         ) {
             SmallTitle(text = "通用设置")
 
-            Card(modifier = Modifier.fillMaxWidth()) {
+            Card(modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp).padding(bottom = 12.dp)) {
                 ArrowPreference(
                     title = "显示",
                     summary = "主题、字体、深色模式",
@@ -53,7 +53,7 @@ fun MainScreen(
 
             SmallTitle(text = "声音与振动")
 
-            Card(modifier = Modifier.fillMaxWidth()) {
+            Card(modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp).padding(bottom = 12.dp)) {
                 SliderPreference(
                     title = "媒体音量",
                     value = soundVolume,
@@ -63,7 +63,7 @@ fun MainScreen(
 
             SmallTitle(text = "通知")
 
-            Card(modifier = Modifier.fillMaxWidth()) {
+            Card(modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp).padding(bottom = 12.dp)) {
                 SwitchPreference(
                     title = "允许通知",
                     summary = "开启后接收应用推送通知",
@@ -74,7 +74,7 @@ fun MainScreen(
 
             SmallTitle(text = "其他")
 
-            Card(modifier = Modifier.fillMaxWidth()) {
+            Card(modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp).padding(bottom = 12.dp)) {
                 ArrowPreference(
                     title = "关于 MIUIX Sample",
                     summary = "版本信息、开源许可",

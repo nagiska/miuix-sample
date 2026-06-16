@@ -56,7 +56,7 @@ fun DisplayScreen(onBack: () -> Unit) {
         ) {
             SmallTitle(text = "外观")
 
-            Card(modifier = Modifier.fillMaxWidth()) {
+            Card(modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp).padding(bottom = 12.dp)) {
                 SwitchPreference(
                     title = "深色模式",
                     summary = "切换浅色与深色主题",
@@ -67,7 +67,7 @@ fun DisplayScreen(onBack: () -> Unit) {
 
             SmallTitle(text = "字体")
 
-            Card(modifier = Modifier.fillMaxWidth()) {
+            Card(modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp).padding(bottom = 12.dp)) {
                 OverlayDropdownPreference(
                     title = "系统字体",
                     items = fontOptions,
@@ -85,7 +85,7 @@ fun DisplayScreen(onBack: () -> Unit) {
 
             SmallTitle(text = "主题色")
 
-            Card(modifier = Modifier.fillMaxWidth()) {
+            Card(modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp).padding(bottom = 12.dp)) {
                 themeOptions.forEachIndexed { index, label ->
                     RadioButtonPreference(
                         title = label,

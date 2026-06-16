@@ -86,7 +86,7 @@ fun AboutScreen(onBack: () -> Unit) {
 
             SmallTitle(text = "信息")
 
-            Card(modifier = Modifier.fillMaxWidth()) {
+            Card(modifier = Modifier.fillMaxWidth().padding(bottom = 12.dp)) {
                 Column(modifier = Modifier.padding(horizontal = 16.dp, vertical = 12.dp)) {
                     InfoRow(label = "版本", value = "1.0.0")
                     HorizontalDivider()
